@@ -31,6 +31,9 @@ print("Desvio padrão de total de casos: ", np.std(covid['totalCasos']))
 estados5MaisMortes = covid.nlargest(5, 'totalMortes', keep='first')
 estados5MenosMortes = covid.nsmallest(5, 'totalMortes')
 
+#estados5MaisCasos = covid.nlargest(5, 'totalCasos', keep='first')
+#estados5MenosCasos = covid.nsmallest(5, 'totalCasos')
+
 
 plt.bar(estados5MaisMortes['Estado'], estados5MaisMortes['totalMortes'])
 plt.show
