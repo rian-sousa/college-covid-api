@@ -32,20 +32,8 @@ estados5MaisMortes = covid.nlargest(5, 'totalMortes', keep='first')
 estados5MenosMortes = covid.nsmallest(5, 'totalMortes')
 
 
-
-
-
-
-
-
 plt.bar(estados5MaisMortes['Estado'], estados5MaisMortes['totalMortes'])
 plt.show
-
-sns.histplot(data=estados5MenosMortes, x='Estado', y='totalMortes')
-
-
-
-
 
 
 # %%
